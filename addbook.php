@@ -27,7 +27,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 <body>
     <h2>Book Signup Form</h2>
     <form method="POST" action="">
-        <label>ID:</label><br>
+        <label>Book ID:</label><br>
         <input type="number" name="book_id" required><br><br>
 
         <label>Title:</label><br>
@@ -37,7 +37,12 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         <input type="text" name="author" required><br><br>
 
         <label>Genre:</label><br>
-        <input type="text" name="genre" required><br><br>
+        <select name="genre" required>
+            <option value="">--Select Genre--</option>
+            <option value="History">History</option>
+            <option value="Science">Science</option>
+            <option value="Fiction">Fiction</option>
+        </select><br><br>
 
         <label>Publication Year:</label><br>
         <input type="number" name="publication_year" required><br><br>
